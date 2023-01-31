@@ -1,6 +1,7 @@
 import os,sys
-if sys.platform == "win32": os.system("cls")
-elif sys.platform == "linux": os.system("clear")
+class cleaner():
+  if sys.platform == "win32": os.system("cls")
+  elif sys.platform == "linux": os.system("clear")
 print("""\n                                        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
                                         █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
                                         █░██░██░██░██░██░██░██░██░██░░░░░░░░░░█
@@ -14,9 +15,7 @@ print("""\n                                        ░░░░░░░░░�
 os.system("pip install pystyle")
 os.system("pip install colorama")
 os.system("pip install pywin32-ctypes")
-os.system("start https://discord.gg/7d2mE3j8WK")
-if sys.platform == "win32": os.system("cls")
-elif sys.platform == "linux": os.system("clear")
+cleaner()
 from pystyle    import Colors, Colorate
 from colorama   import Fore
 import ctypes
